@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#000000">
+
+<script>
+function TenSecondsCandle()
+{
+element=document.getElementById('myimage')
+element.src="AnimatedCandle.gif";
+element.style.align="center";
+var x=document.getElementById('txt');
+x.style.textAlign="center";
+x.style.color="#FFFFFF";
+var t1=setTimeout(function(){x.innerHTML="15 segundos"},1);
+var t1=setTimeout(function(){x.innerHTML="14 segundos"},1000);
+var t1=setTimeout(function(){x.innerHTML="13 segundos"},2000);
+var t1=setTimeout(function(){x.innerHTML="12 segundos"},3000);
+var t1=setTimeout(function(){x.innerHTML="11 segundos"},4000);
+var t1=setTimeout(function(){x.innerHTML="10 segundos"},5000);
+var t1=setTimeout(function(){x.innerHTML=" 9 segundos"},6000);
+var t1=setTimeout(function(){x.innerHTML=" 8 segundos"},7000);
+var t1=setTimeout(function(){x.innerHTML=" 7 segundos"},8000);
+var t1=setTimeout(function(){x.innerHTML=" 6 segundos"},9000);
+var t1=setTimeout(function(){x.innerHTML=" 5 segundos"},10000);
+var t1=setTimeout(function(){x.innerHTML=" 4 segundos"},11000);
+var t1=setTimeout(function(){x.innerHTML=" 3 segundos"},12000);
+var t1=setTimeout(function(){x.innerHTML=" 2 segundos"},13000);
+var t1=setTimeout(function(){x.innerHTML=" 1 segundos"},14000);
+var t1=setTimeout(function(){x.innerHTML=" 0 segundos"},14998);
+var t1=setTimeout(function(){x.innerHTML=""},14999);
+var t1=setTimeout(function(){element.src="CandleOff.gif"},15000);
+}
+</script>
+
+<img id="myimage" onclick="TenSecondsCandle()"
+src="CandleOff.gif" width=240 height="400">
+<p id="txt"></p>
+</body>
+</html>
